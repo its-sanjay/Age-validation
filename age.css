@@ -1,0 +1,84 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+}
+body{
+    background-color: rgb(73, 73, 73);
+    color:white;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.container{
+    background-color: #fff;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+    color:black;
+    width: 500px;
+}
+.container .header{
+    background-color: rgb(163, 163, 236);
+    padding:20px;
+    margin-bottom: 20px;
+}
+.header h2{
+    text-align: center;
+    font-style: italic;
+}
+
+.fields{
+    display:flex;
+    justify-content: center;
+    position: relative;
+}
+.fields input{
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    padding:10px;
+    margin-bottom: 15px;
+}
+.fields small{
+position: absolute;
+left:0;
+top:50px;
+margin-bottom:10px;
+color:red;
+font-size: 20px;
+visibility: hidden;
+}
+.fields.child small{
+    color:green;
+    visibility: visible;
+    background-color: hotpink;
+}
+.fields.teen small{
+    color:rgb(16, 9, 112);
+    visibility: visible;
+    background-color: grey;
+}
+
+.fields.older small{
+    color:rgb(83, 8, 61);
+    visibility: visible;
+    background-color: greenyellow;
+}
+.fields.empty small{
+    color:rgb(12, 12, 12);
+    visibility: visible;
+}
+button{
+    margin-top:20px;
+    width: 100%;
+    padding:10px;
+    background-color: crimson;
+    color:white;
+    font-size: xx-large;
+    outline: none;
+    border:none;
+    cursor: pointer;
+}
+button:hover{
+    background-color: rgb(155, 13, 42);
+}
